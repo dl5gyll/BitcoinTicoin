@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bitcoin_Ticker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body class="p-3 mb-2 bg-success text-white">
+    <h1 style="text-align:center;" class="text-primary">Bitcoin Ticker</h1>
+    <form action="/" method="post">
+
+      <div style="width: 40%; margin-left: 200px;" class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Coins</span>
+  </div>
+  <input type="text" name="amount" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" placeholder="Quantity">
+</div>
+
+
+    <div style="width: 40%; margin-left: 200px; " class="input-group mb-3">
+      <select class="custom-select" name="crypto" value="crypto" id="inputGroupSelect02">
+        <option selected>Select coins</option>
+        <option value="BTC">Bitcoin</option>
+        <option  value="ETH">Etheream</option>
+        <option value="LTC">Litecoins</option>
+      </select>
+      <div class="input-group-append">
+        <label class="input-group-text" for="inputGroupSelect02">Crypto</label>
+      </div>
+    </div>
+
+    <div  style="width: 40%; margin-left: 200px;" class="input-group mb-3">
+      <select class="custom-select" name="fiat" value="fiat" id="inputGroupSelect02">
+        <option selected>Select Fiats</option>
+        <option value="USD">US Dollars</option>
+        <option value="GBP">GB Pounds</option>
+        <option value="EUR">EU Euros</option>
+      </select>
+      <div class="input-group-append">
+        <label class="input-group-text" for="inputGroupSelect02">Fiats</label>
+      </div>
+    </div>
+    <button style="margin-left: 200px;" type="submit" class="btn btn-info" name="button">Check</button>
+    </form>
+  </body>
+</html>
